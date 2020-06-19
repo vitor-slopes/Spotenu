@@ -7,7 +7,7 @@ export const routes = {
   root: "/",
 };
 
-function Router(props) {
+function router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
@@ -17,4 +17,4 @@ function Router(props) {
   );
 }
 
-export default Router;
+export default router;
