@@ -6,7 +6,7 @@ import { generateReducers } from "../../reducers/index";
 import { routerMiddleware } from "connected-react-router";
 import { MuiThemeProvider, CssBaseline } from "@material-ui/core";
 import theme from "../../style/theme";
-import Router from "../Router/index";
+import Router from "../Router/router";
 import { createBrowserHistory } from "history";
 
 
