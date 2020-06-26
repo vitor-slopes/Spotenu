@@ -8,16 +8,18 @@ import SignUpPage from '../SignUpPage/SignUpPage'
 export const routes = {
   root: "/",
   login: "/login",
-  signUp: "/signUp"
+  homePage: "/homepage",
+  signUp: "/signUp",
 };
 
 function router(props) {
   return (
     <ConnectedRouter history={props.history}>
       <Switch>
-        <Route exact path={routes.root} component={homepage} />
+        {/* <Route exact path={routes.root} component={homepage} /> */}
+        <Route exact path={routes.root} component={SignUpPage} />
         <Route exact path={routes.login} component={LoginPage} />
-        <Route exact path={routes.signUp} component={SignUpPage} />
+        <Route exact path={routes.homePage} component={homepage} />
       </Switch>
     </ConnectedRouter>
   );
